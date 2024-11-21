@@ -1,0 +1,187 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text color for readability */
+}
+
+header {
+    background: linear-gradient(135deg, #2BB673 0%, #1a6e45 100%); /* Gradient */
+    color: white;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-left:15vw;
+    width:70vw;
+    height:20vh;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow */
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-left: px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in; /* Animation */
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+header div{
+    color:black;
+    display: flex;
+    /* align-content: end; */
+    position: relative;
+    left:20vw;
+    /* bottom:10vh; */
+    width:7vw;
+    height:10vh;
+    border:2px solid black;
+}
+header img{
+   width:260px;
+   height: 150px;
+   position: relative;
+   right: 280px;
+   border-radius: 50%; /* Makes the image circular */
+   object-fit: cover;
+   bottom:60px;
+   /* border: none; */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero {
+    width: 95%;
+    height: 55vh; /* Adjust height as needed for a full image */
+    margin-left: 60px;
+    /* border:2px solid black; */
+    /* overflow: hidden; */
+    position: relative; /* Make the position relative for absolute child */
+}
+
+
+.hero img {
+    width: 50%;
+    height: 100%; /* Make sure the image covers the entire hero */
+    object-fit: cover; /* Cover the container */
+    filter: brightness(0.7); /* Dim the image */
+    position: absolute; /* Allow it to cover the container */
+    border-radius:21px;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+}
+
+.hero p{
+    font-size: 20px;
+    height:50vh;
+    text-wrap:wrap;
+    width: 40vw;
+    overflow: hidden;
+    color: black;
+    position: relative;
+    left:800px;
+
+}
+
+.description-card {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for the card */
+    margin: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.description-content {
+    max-width: 60%; /* Cover 60% of the upper half */
+}
+
+.treatments {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    background: #ffffff; /* White card background */
+    border: 2px solid #2BB673; /* Parrot green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #2BB673; /* Parrot green for card headings */
+    font-weight: 700;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contact section */
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #2BB673; /* Parrot green footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+    .description-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description-content {
+        max-width: 100%;
+    }
+}

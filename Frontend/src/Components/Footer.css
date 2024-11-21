@@ -1,0 +1,33 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width:85vw;
+    gap: 10px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    height: 30vh;
+    margin: 5px;
+    margin-top:50px;
+  }
+  @media screen and (max-width:432px){
+    .footer{
+        display:flex;
+        flex-direction: row;
+        background: green;
+        height:15vh;
+        width: 98vw;
+        margin-top:15px;
+    }
+    .ls{
+        display: flex;
+        gap: 22px;
+    }
+  }
+  .ls{
+    margin-top: 15px;
+    margin-left:10px;
+  }
+  .links{
+    color:white;
+  }
