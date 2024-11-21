@@ -1,6 +1,6 @@
 # React + Vite
 I have use React for Frontend and Nodejs+Express+Mongoose for this WebApp
-My Project includes Proper authentication and Authorization and Cnsultacy portal
+My Project includes Proper authentication and Authorization and Consultacy portal, Video calling, Live ChatAppand Payment Gateway
 
 Currently, two official plugins are available:
 
